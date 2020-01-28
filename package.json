@@ -1,0 +1,20 @@
+{
+  "name": "raspi-lamp",
+  "version": "1.0.0",
+  "description": "This is a tiny module to connect an I2C RGB lamp to a Pi and make it possible for other devices to configure it by using Bluetooth Low Energy.",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "node src/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Fireblade75/raspi-lamp.git"
+  },
+  "keywords": [],
+  "author": "Fireblade75",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Fireblade75/raspi-lamp/issues"
+  },
+  "homepage": "https://github.com/Fireblade75/raspi-lamp#readme"
+}
