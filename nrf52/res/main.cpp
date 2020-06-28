@@ -39,7 +39,7 @@ public:
     LightSensor(BLE &ble, events::EventQueue &event_queue) :
         _ble(ble),
         _event_queue(event_queue),
-        _battery_uuid(UUIDservice),
+        _light_uuid(UUIDservice),
         _light_level(50),
         _light_service(ble, _light_level),
         _adv_data_builder(_adv_buffer) { }
@@ -77,7 +77,7 @@ private:
         );
 
         _adv_data_builder.setFlags();
-        _adv_data_builder.setLocalServiceList(mbed::make_Span(&_battery_uuid, 1));
+        _adv_data_builder.setLocalServiceList(mbed::make_Span(&_light_uuid, 1));
         _adv_data_builder.setName(DEVICE_NAME);
 
         /* Setup advertising */
@@ -138,7 +138,7 @@ private:
     BLE &_ble;
     events::EventQueue &_event_queue;
 
-    UUID _battery_uuid;
+    UUID _light_uuid;
 
     uint8_t _light_level;
     LightService _light_service;

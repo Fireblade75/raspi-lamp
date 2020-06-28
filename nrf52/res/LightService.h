@@ -63,12 +63,12 @@ public:
         // ),
         sensorCharacteristic(
             UUID_SENSOR_CHARACTERISTICS,
-            &batteryLevel,
+            &brightnessLevel,
             GattCharacteristic::BLE_GATT_CHAR_PROPERTIES_NOTIFY
         )
     {
         MBED_ASSERT(level <= 100);
-        GattCharacteristic *charTable[] = { &batteryLevelCharacteristic };
+        GattCharacteristic *charTable[] = { &sensorCharacteristic };
         GattService lightService(
             UUID_LAMP_SERVICE,
             charTable,
