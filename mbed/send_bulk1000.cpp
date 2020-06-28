@@ -128,7 +128,7 @@ int main() {
         
         if((btns1 == 0) || (btns2 == 0)) {
             senderTimer.start();
-            for(int current_int = 1; current_int < MESSAGE_COUNT; current_int++) {        
+            for(int current_int = 1; current_int <= MESSAGE_COUNT; current_int++) {        
                 txData[0] = current_int >> 24;
                 txData[1] = current_int >> 16 & 0xFF;
                 txData[2] = current_int >> 8 & 0xFF;
