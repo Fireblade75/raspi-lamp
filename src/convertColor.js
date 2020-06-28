@@ -1,4 +1,9 @@
 
+/**
+ * Convert a color string to rgb
+ * @param {string} str the color name
+ * @returns {object} an object containing the rgb values
+ */
 function convertColor(str) {
     switch(str) {
         case 'red': return { red: true, blue: false, green: false }
