@@ -16,5 +16,14 @@
   "bugs": {
     "url": "https://github.com/Fireblade75/raspi-lamp/issues"
   },
-  "homepage": "https://github.com/Fireblade75/raspi-lamp#readme"
+  "homepage": "https://github.com/Fireblade75/raspi-lamp#readme",
+  "dependencies": {
+    "i2c-bus": "^5.1.0",
+    "@abandonware/noble": "^1.9.2-5",
+    "dotenv": "^8.2.0"
+  },
+  "devDependencies": {
+    "@types/i2c-bus": "^1.0.27",
+    "@types/noble": "0.0.39"
+  }
 }
