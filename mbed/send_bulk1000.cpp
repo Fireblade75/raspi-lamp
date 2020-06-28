@@ -158,6 +158,7 @@ int main() {
                     printf("%i messages received\r\n", messageCount);
                     printf("It took %i ms to receive all messages\r\n", receiverTimer.read_ms());
                 }
+                printf("recieved %i, total %i\r\n", rxInt, messageCount);
             }
         }
     }
